@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Prueba gifItem Debo hacer un snapchot 1`] = `
+<div>
+  <div
+    class="card"
+  >
+    <img
+      alt="sukuna"
+      src="https://sukuna.jpg"
+    />
+    <p>
+      sukuna
+    </p>
+  </div>
+</div>
+`;
