@@ -2,6 +2,7 @@
 
 import { GifItem } from "./GifItem"
 import { useFetchGifs } from "../hooks/useFetchGifs";
+import PropTypes from 'prop-types'
 
 export const GifGrid = ({ categoryP }) => {
 //Custom hook
@@ -21,11 +22,16 @@ export const GifGrid = ({ categoryP }) => {
                 {images.map((image) =>(
                     <GifItem 
                     key={image.id}
-                        {...image}
+                        {...image}//toma todas las propiedades del objeto image y las pasa al componente GifItem de forma desestructurada.
                     />
                 ))}
 
             </div>
         </>
     )
+}
+
+
+GifGrid.propTypes = {
+    categoryP: PropTypes.string.isRequired,
 }
